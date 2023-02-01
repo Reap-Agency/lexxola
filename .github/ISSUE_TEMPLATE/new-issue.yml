@@ -1,0 +1,105 @@
+name: New Issue, bug or feature - Use This
+description: Add new issues
+title: "[Issue]: "
+labels: ["Backlog"]
+assignees:
+  - mikeprojectmanagement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: dropdown
+    id: issuetype
+    attributes:
+      label: What is the Nature of this issue
+      description: Bug, feature, estimate, what?
+      options:
+        - New Bug in the Code
+        - Add new functionality
+        - Build new page
+        - Fix bugs as per QA Document Below
+        - Issue is given in Video below
+        - New Estimate needed today
+        - Testing Needed
+        - Don' eat my head bhai
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What is this problem or issue to be fixed?
+      description: Explain the exact problem?
+      placeholder: Show your story writing skills!
+      value: "When I am on ......."
+    validations:
+      required: true
+  - type: textarea
+    id: where-happened
+    attributes:
+      label: Where is the issue i.e. on which page?
+      description: Tell us where the issue is like you tell a doctor!
+      placeholder: On product page...!
+      value: "When we click on ........"
+    validations:
+      required: true
+  - type: textarea
+    id: expected-happened
+    attributes:
+      label: What is expected outcome or Acceptance Criteria?
+      description: Explain to developer us what do you expect to be happening!
+      placeholder: If I click this that should happen!
+      value: "If I click on ........"
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Screen size or device
+      description: This issue is happening on?
+      options:
+        - Mobile
+        - Desktop
+        - Tablet
+        - Big Monitor
+        - 1440
+        - 1920
+        - 375px
+        - 490px
+        - Don' eat my head bhai
+    validations:
+      required: true
+  - type: textarea
+    id: support-happened
+    attributes:
+      label: Supporting Documents?
+      description: Please paste links of Figma, screensoht, exmaple url or any video url
+      placeholder: any links
+      value: "Figma Link - "
+    validations:
+      required: false
+  - type: input
+    id: deadline
+    attributes:
+      label: What is the Deadline? Date Time
+      description: When do you need this by?
+      placeholder: ex. in 5 minutes, next year , 2nd Feb 2021 
+    validations:
+      required: false
+  - type: textarea
+    id: tag-happened
+    attributes:
+      label: Who should be notified?
+      description: Please tag users id who should get alert when you submit the issue
+      placeholder: tag user name
+      value: "@iamsogoodinwhatido"
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Double check before submitting
+      description: By submitting this issue, I agree I have given all information to user
+      options:
+        - label: Nothing was missed and all information was there
+          required: true
